@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹표준퍼블리싱 과제</title>
+    <style>
+        body{
+          margin: 0 200px;
+        }
+        .bf {
+          font-size: 36px;
+          font-weight: 600;
+          color: rgb(65, 200, 205);
+        }
+        .cf {
+          font-size: 26px;
+          font-weight: 600;
+          color:rgb(31, 85, 85)
+        }
+        .con{
+          border : 1px solid lightgray;
+          padding: 10px;
+          line-height: 1.6;
+        }
+        hr {
+          margin: 15px 0;
+        }
+      </style>
+</head>
+<body>
+    <p class="bf">웹표준 퍼블리싱 21961095 장우진</p>
+    <p class="cf">복습 과제</p>
+    <hr>
+    <p class="bf">블록 요소와 인라인 요소</p>
+    <p class="con">- div태그와 span태그는 블록과 인라인으로 나누어집니다.<br>
+      블록 요소 ex) H1~H6, p, div <br />
+      인라인 요소 ex) a, img, em, strong, span <br>
+      - <strong>블록 요소</strong>인 div태그는 한줄의 블록을 다 차지하고<br>
+      - <strong>인라인 요소</strong>인 span태그는 콘텐츠의 크기만큼만 차지합니다.</p>
+      <div style="background:cornflowerblue; font-size: 30px;">
+        &lt;div&gt;블록형 태그입니다.
+      </div>
+      <br>
+      <span style="background:yellowgreen; font-size: 30px;">
+        &lt;span&gt;인라인 태그입니다.
+      </span>
+    <hr>
+    <p class="bf">문단 관련 요소</p>
+    <p class="cf">제목</p>
+    <p class="con"> - 제목 태그를 설정할 때 h1부터 h6까지의 태그로 제목을 설정합니다.</p>
+    <h1>&lt;h1&gt;대제목</h1>
+    <h2>&lt;h2&gt;중제목</h2>
+    <h3>&lt;h3&gt;소제목</h3>
+    <h4>&lt;h4&gt;소소제목</h4>
+    <h5>&lt;h5&gt;소소소제목</h5>
+    <h6>&lt;h6&gt;소소소소제목</h6>
+    <hr />
+    <p class="cf">단락</p>
+    <p class="con"> - 단락을 작성을 할 때 p태그를 사용합니다.</p>
+    <p>&lt;p&gt;안녕하세요. 2학년 D반 장우진입니다. 잘 부탁드립니다.&lt;/p&gt;</p>
+    <p class="cf">줄바꿈</p>
+    <p class="con"> - 줄을 바꿀 때 사용하는 br태그로 줄을 바꿀 때 사용합니다.</p>
+    &lt;br /&gt;
+    <br>
+    <p class="cf">구분선</p>
+    <p class="con"> - 구분선을 짓는 hr 태그로 구분을 지을 때 사용합니다.</p>
+    &lt;hr /&gt;
+    <hr>
+    <br>
+    <p class="bf">경로와 이미지 태그</p>
+    <p class="cf">하이퍼링크</p>
+    <p class="con"> - 하이퍼링크 a 태그는 텍스트나 이미지에 링크를 설정할 때 사용합니다. 인라인 요소<br>
+    - 절대경로 : 전체 구조 내에서의 경로 지정합니다, http:// 포함해서 전체 경로를 표시합니다.<br>
+    - 상대경로 : 파일의 현재 위치를 기준으로 경로 지정합니다.<br>
+    ex) <br>/: 최상위 폴더<br>./: 현재폴더<br>../: 이전폴더</p>
+    &lt;a&gt;
+    <a href="http://www.kaywon.ac.kr/" target="_blank" alt="계원예술대학교" title="제목 속성">계원예술대학교</a>
+    <br>
+    <p class="cf">이미지</p>
+    <p class="con">이미지 태그 img는 이미지 개체를 삽입할 때 사용합니다 인라인 요소</p>
+    <img src="https://lh3.googleusercontent.com/proxy/u8Izs6vObVZUAmjhJK9_N30uYml-VA4bDsViWg-3tMi-LBRfO5Obr7MA6wvYmH5eFVIAi0j8_QuI0OLQFv_J1H4j73jrtnkEfT6MPYiyqz4" alt="사진" /><p>- 절대경로를 사용한 이미지</p><br /><br />
+    <img src="picture.jpg" alt="사진" /><p>- 상대경로를 사용한 이미지</p>
+    <br>
+    <hr>
+    <p class="bf">목록 관련 요소</p>
+    <p class="cf">비순서형, 순서형, 정의형 목록</p>
+    <p class="con">-  비순서형 목록은 ul태그입니다 ~ 자식요소로 li를 사용합니다. 
+    <br>- 순서형 목록은 ol태그입니다 ~ 자식요소로 li를 사용합니다. 
+    <br>Definition List. 용어 정의 리스트를 생성할 때 사용합니다</p>
+    <h1>커리(curry) 만들기</h1>
+    <h2>재료</h2>
+    <ul>
+      <li>카레가루 <em>100g</em></li>
+      <li>닭가슴살 <strong>200g</strong></li>
+      <li>감자 <strong><em>1개</em></strong></li>
+      <li>양파 1/2개</li>
+      <li>당근 1/2개</li>
+    </ul>
+    <h2>만드는 법</h2>
+    <ol>
+      <li>카레 가루 <del>8큰술</del><ins>7.5큰술</ins>에 물 6큰술을 넣어 풀어놓는다.</li>
+      <li>닭가슴살, 감자, 양파, 당글을 따로 중불에 살짝 볶는다.</li>
+      <li>볶아 놓은 재료를 카페를 풀어놓은 물과 함께 냄비에 넣고 물<sub>2</sub>컵을 부은 후 15분 정도 끓인다.</li>
+    </ol>
+
+    <dl>
+      <dt>커리(curry) 만들기</dt>
+      <dd>
+        <dl>
+          <dt>재료</dt>
+          <dd>
+            <ul>
+              <li>카레 가루 100g</li>
+              <li>닭가슴살 200g</li>
+              <li>감자 1개</li>
+              <li>양자 1/2개</li>
+              <li>당근 1/2개</li>
+            </ul>
+          </dd>
+        </dl>
+      </dd>
+    </dl>
+    <hr>
+    <p class="bf">텍스트 관련 요소</p>
+    <p class="cf">강조 - strong, em</p>
+    <p class="con">
+      - 강한 강조 &lt;strong&gt; : 굵게 출력합니다.<br>
+      - 강한 강조 &lt;em&gt; : 기울림꼴로 출력합니다.
+    </p>
+    <p><strong>strong태그로 출력한 글씨입니다.</strong></p>
+    <p><em>em태그로 출력한 글씨입니다.</em></p>
+    <br>
+    <p class="cf">추가글, 삭제글 - ins, del</p>
+    <p class="con">
+      - 추가글 &lt;ins&gt; : 텍스트의 아래쪽에 밑줄 표시합니다.<br>
+      - 삭제글 &lt;del&gt; : 텍스트의 중간에 밑줄 표시합니다.
+    </p>
+    <p><ins>ins태그로 출력한 글씨입니다.</ins></p>
+    <p><del>del태그로 출력한 글씨입니다.</del></p>
+    <br />
+    <p class="cf">첨자 - sup, sub</p>
+    <p class="con">
+      - 윗첨자 &lt;sup&gt; : 텍스트의 오른쪽 위에 작게 표시합니다.<br>
+      - 아랫첨자 &lt;sub&gt; : 텍스트의 오른쪽 아래에 작게 표시합니다.
+    </p>
+    <p>ins<sup>태그</sup>로 출력한 글씨입니다.</p>
+    <p>del<sub>태그</sub>로 출력한 글씨입니다.</p>
+    <br>
+    <hr>
+
+    <p class="bf">테이블 관련 요소</p>
+    <p class="cf">테이블 요소 - table, tr, th, td</p>
+    <p class="con">
+      선언 &lt;table&gt; <br>
+      행 &lt;tr&gt; <br>
+      - 제목 셀 &lt;th&gt; <br> 
+      - 내용 셀 &lt;td&gt;<br>
+    </p>
+    <p class="cf">셀 병합 - rowsapn, colspan</p>
+    <p class="con">
+      가로로 합치기 colsapn <br>
+      세로로 합치기 colsapn <br>
+    <p class="cf">제목 및 요약문 - caption, summary</p>
+    <p class="con">
+      summary <br>
+      - 간단한 제목보다 테이블의 내용을 설명합니다.<br>
+      - 시각적으로 테이블 접근이 쉽지 않은 사용자를 위한 배려<br>
+      caption <br>
+      - 테이블의 내용을 대표할 수 있는 제목을 작성합니다.<br>
+    <p class="cf">행 그룹화 요소 - thead, tfoot, tbody</p>
+    <p class="con">
+      --선언 순서 : thead -> tfoot -> tbody <br>
+      thead <br>
+      - 테이블의 헤더 영역. 반드시 th요소를 사용하여 제목 셀이라는 것을 명시합니다.<br>
+      tfoot <br>
+      - 위치에 관계 없이 테이블의 가장 마지막 행에 출력합니다.<br>
+      tbody <br>
+      - 논리적 구분을 위해 여러 번 등장할 수도 있습니다.<br>
+    </p>
+    <p class="cf">제목 셀과 내용 셀의 연관성 - scope</p>
+    <p class="con">
+      - scope = "row" : 행의 제목 <br>
+      - scope = "col" : 열의 제목 <br>
+    </p>
+    <h1>출석부</h1>
+    <table border="1" summary="디지털미디어디자인학과 학번, 이름, 전화번호">
+      <caption>디지털미디어디자인학과 출석부</caption>
+      <thead>
+        <tr>
+          <th scope="col">학과</th>
+          <th scope="col">학번</th>
+          <th scope="col">이름</th>
+          <th scope="col">전화번호</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="3">총학생수</th>
+          <th>3명</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td rowspan="3">디지털미디어디자인</td>
+          <td>21961095</td>
+          <td>장우진</td>
+          <td>010-2451-4945</td>
+          <tr>
+            <td>21961096</td>
+            <td>덕수궁</td>
+            <td>010-1651-3545</td>
+          </tr>
+          <tr>
+            <td>21961097</td>
+            <td>돌담길</td>
+            <td>010-9051-3425</td>
+          </tr>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <hr>
+    <p class="bf">폼 관련 요소</p>
+    <p class="cf">폼의 정의와 요소</p>
+    <p class="con">
+    웹 문서가 서로 상호작용을 할 수 있도록 하는 역할을 합니다.  <br>
+    -입력 상자, 라디오 버튼, 체크 박스, 목록 상자(combo box),전송 버튼<br>
+    폼 요소<br>
+    - action = "url"<br>
+    - mothod = "get"<br>
+    - method = "post"<br>
+    </p>
+    <p class="cf">그룹화, 제목</p>
+    <p class="con">
+      그룹화<br>
+      - fieldset : 여러 개의 폼 요소를 그룹화 하여 좀 더 구조적으로 표현 가능합니다.<br>
+      - legend : 어떠한 성격의 콘텐츠인지 제목 형식으로 알려줌. 한번만 작성 가능합니다.<br>
+    </p>
+    <p class="cf">레이블</p>
+    <div class="con">
+      각 폼 컨트롤의 연관 관계와 설명을 추가하는 역할을 합니다.<br>
+      - 입력 폼과 1:1로 대응합니다.<br>
+      - 사용하기 어려울 경우 input에 title속성으로 대체 가능합니다.<br>
+      명시적 레이블 (권장)<br>
+      <div class="con">
+        &lt;fieldset&gt;<br>
+        &emsp;&lt;legend&gt;명시적인 레이블&lt;/legend&gt;<br>
+        &emsp;&lt;p&gt;<br>
+        &emsp;&emsp;&lt;label for="userId"&gt;아이디&lt;/label&gt;<br>
+        &emsp;&emsp;&lt;input type="text" id="userId"&gt;<br>
+        &emsp;&lt;p&gt;<br>
+        &lt;fieldset&gt;<br>
+      </div>
+      암묵적 레이블<br>
+      <div class="con">
+        &lt;fieldset&gt;<br>
+        &emsp;&lt;legend&gt;암묵적인 레이블&lt;/legend&gt;<br>
+        &emsp;&lt;p&gt;<br>
+        &emsp;&emsp;&lt;label&gt;연락처 &lt;input type="text" id="userPhone"&gt;&lt;/label&gt;<br>
+
+        &emsp;&lt;p&gt;<br>
+        &lt;fieldset&gt;<br>
+      </div>
+    </div>
+    <p class="cf">input</p>
+    <p class="con">
+      Type <br>
+      - text : 한 줄 글상자 <br>
+      - password : 비밀번호 입력. *나 ●로 표시합니다. <br>
+      - radio : 여러 개의 라디오 버튼 중 하나만 선택 가능합니다. (같은 name명 끼리 묶음) <br>
+      - checkbox : 다중 선택이 가능한 체크박스입니다. <br>
+      - file : 파일을 첨부 형태로 서버로 보낼 때 사용하는 컨트롤입니다. <br>
+    </p>
+    <p class="cf">select, option, optgroup</p>
+    <p class="con">
+      select <br>
+      - size : 기본 출력에 확보할 줄 개수 지정합니다.
+    </p>
+    <p class="cf">textarea</p>
+    <p class="con">
+      textarea  <br>
+      - col : 가로 글자 수  <br>
+      - rows : 줄 개수
+    </p>
+    <p class="cf">button</p>
+    <p class="con">
+      type  <br>
+      - button : 일반 <br>
+      - submit : 전송 <br>
+      - reset  : 취소 <br>
+    </p>
+
+    <br>
+    <form style="line-height: 2;" action="" method="get">
+      <fieldset>
+        <legend>실습용 폼</legend>
+        
+        <label for="userId">아이디</label>
+        <input type="text" id="userId">    <br>
+        <label for="userPw">패스워드</label>
+        <input type="password" id="userPw">     <br>
+        <label for="select4">선택</label>
+        <input type="radio" name="selectBox" id="select4">     <br>
+        <label for="cb3">체크박스3</label>
+        <input type="checkbox" name="check" id="cb3"><br>
+        <input type="file">
+      </fieldset>
+    </form>
+    <form style="line-height: 2;" action="" method="get">
+      <fieldset>
+        <legend>실습용 폼</legend>
+        <label for="select1">선택1</label>
+        <input type="radio" name="selectBox" id="select1">
+        <label for="select2">선택2</label>
+        <input type="radio" name="selectBox" id="select2">
+        <label for="select3">선택3</label>
+        <input type="radio" name="selectBox" id="select3">
+        <label for="select4">선택4</label>
+        <input type="radio" name="selectBox" id="select4">     <br>
+      </fieldset>
+    </form>
+    <form style="line-height: 2;" action="" method="get">
+      <fieldset>
+        <legend>실습용 폼</legend>
+        <input type="checkbox" name="check" id="cb1">
+        <label for="cb1">체크박스1</label><br>
+        <input type="checkbox" name="check" id="cb2">
+        <label for="cb2">체크박스2</label><br>
+        <input type="checkbox" name="check" id="cb3">
+        <label for="cb3">체크박스3</label><br>
+      </fieldset>
+    </form>
+    <form style="line-height: 2;" action="" method="get">
+      <fieldset>
+        <legend>실습용 폼</legend>
+        <textarea cols="200" rows="10">
+        텍스트를 입력하세요.
+        </textarea>
+      </fieldset>
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <p class="bf">그룹화 요소</p>
+    <p class="cf">1. 블록 그룹화 요소 - div</p>
+    <p class="con">
+        - 분할, 나누기의 이미. 그룹핑(grouping)의 역할<br>
+        - id와 class로 해당 그룹의 의미를 부여<br>
+        - 블록 요소를 그룹화 하기 위해<br>
+        - 레이아웃 구현<br>
+        - 논리적인 구조를 고려하여 서로 연관성 있는 콘텐츠를 그룹핑<br>
+        <div style="background-color: cadetblue;">블록 그룹화 요소 div</div>
+    </p>
+    <p class="cf">1. 인라인 그룹화 요소 - span</p>
+    <p class="con">
+        - 인라인 요소를 그룹화<br>
+        - id와 class로 해당 그룹의 의미를 부여<br>
+        - 인라인 요소이므로 p,ul 같은 블록 요소를 포함할 수 없다<br>
+    </p>
+    <span style="background-color: chartreuse;">인라인 그룹화 요소</span>
+    <br>
+    <hr>
+    <br>
+    <p class="bf">HTML5의 탄생</p>
+    <p class="cf">1. HTML5의 탄생</p>
+    <p class="con">
+        1. WHATWG의 탄생, XHTML 2.0의 실패<br>
+        – 2004년 애플, 모질라 재단, 오페라 소프트웨어가 공동으로 설립한 WHATWG(Web Hypertext Application Technology Working Group)의 탄생<br>
+        – 2007년 W3G가 공개적으로 XHTML 2.0 실패 인정<br>
+        2. HTML5 탄생<br>
+        – W3G가 WHATWG의 표준안을 대부분 수용<br>
+    </p>
+    <br>
+    <hr>
+    <p class="bf">HTML4.01, XHTML1.0과 HTML5의 차이점</p>
+    <p class="cf">2. HTML4.01, XHTML1.0과 HTML5의 차이점</p>
+    <p class="con">
+        <strong>1. 콘텐츠 모델</strong><br>
+        – XHTML : 인라인 요소, 블록 요소로 구분하는 정도의 개념<br>
+        – 좀 더 명확한 정보구조 설계 및 구성을 위해 카테고리를 정의<br>
+    </p>
+    <p class="con">
+        <strong>• 섹셔닝 루트 (Sectioning Root)</strong><br>
+        - 섹셔닝 루트에 속하는 요소는 &lt;section&gt;이나&lt;article&gt; 요소와 같이 장이나 절과 같은 계층 구조로 <br>구분되지 않고 독립적인 콘텐츠로 분리되기 때문에 아웃라인에 영향을 주지 않음.
+    </p>
+    <p class="con">
+        <strong>• 메타데이터 콘텐츠(Metadata Content)</strong><br>
+        - 메타데이터는 문서의 정보를 포함하는 메타데이터, 스타일 표현을 위한 &lt;style&gt; 요소, 행동을 설정하는 &lt;script&gt; 요소들을 나타냄. <br>웹 브라우저에 직접적으로 표시되지 않으며, 문서(document)와 문서 간의 관계를 설정함.
+    </p>
+    <p class="con">
+        <strong>• 섹셔닝 콘텐츠(Sectioning Content)</strong><br>
+        - 섹셔닝 콘텐츠는 대부분 HTML5에서 새롭게 추가된 요소들이며, 제목과 그 내용을 포함한 범위를 지정하는 콘텐츠를 나타냄. <br>모든 섹셔닝 콘텐츠는 헤딩과 아웃라인을 가짐.
+    </p>
+    <p class="con">
+        <strong>• 플로우 콘텐츠(Flow Content)</strong><br>
+        - 메타데이터 콘텐츠 요소 중 일부를 제외하고 문서 본문에 해당하는 body 요소에 들어가는 대부분의 요소들이 플로우 콘텐츠 모델에 속한다
+    </p>
+    <p class="con">
+        <strong>• 헤딩 콘텐츠(Heading Content)</strong><br>
+        - 헤딩 콘텐츠는 섹션의 제목을 나타냄. 문서의 아웃라인을 고려하여 사용해야 함.
+    </p>
+    <p class="con">
+        <strong>• 프레이징 콘텐츠(Phrasing Content)</strong><br>
+        - 문서의 텍스트를 나타내며, 그 텍스트를 문단 내부 레벨로 마크업하는 요소들. 프레이징 콘텐츠가 모여 문단을 구성함.<br>
+        - 프레이징 콘텐츠로 분류되는 요소의 대부분은 플로우 콘텐츠 전체를 포함할 수 없으며, 프레이징 콘텐츠로 분류된 요소만을 포함할 수 있음.
+    </p>
+    <p class="con">
+        <strong>• 임베디드 콘텐츠(Embedded Content)</strong><br>
+        - 임베디드는 ‘포함된’이라는 뜻을 가지고 있으며, 문서 안에 외부 자원(‘외부리소스’라고 불리기도 함) 또는 HTML이 아닌 다른 언어로 표현되는 콘텐츠를 말함.<br>
+        - 외부 자원에는 이미지, 동영상, 플러그인, 아이프레임 콘텐츠 등이 있고, 다른 언어로 된 콘텐츠에는 수학 공식을 표현하는 MathML과 SVG 등이 있음. 
+    </p>
+    <p class="con">
+        <strong>• 인터랙티브 콘텐츠(Interactive Content)</strong><br>
+        - 인터랙티브 콘텐츠는 사용자가 어떤 기능을 조작할 수 있는 (상호 작용) 콘텐츠를 말함.<br>
+        - &lt;audio&gt;, &lt;img&gt;, &lt;input&gt;, &lt;object&gt;, &lt;video&gt; 요소는 이러한 특성을 바탕으로 조건부 인터랙티브 콘텐츠가 됨
+    </p>
+    <p class="con">
+        <strong>• 팰퍼블 콘텐츠(Palpable Content)</strong><br>
+        - 팰퍼블 콘텐츠는 기존 콘텐츠 모델에 새롭게 추가된 개념으로 구체적으로 보여지고 이해할 수 있는 콘텐츠 요소를 말하며, <br>최소한 하나 이상의 요소가 존재해야 하고 이때 해당 요소는 숨김 상태여서는 안 됨.
+    </p>
+    <p class="con">
+        <strong>• 스크립트 지원 요소(Script-supporting Elements)</strong><br>
+        - 스크립트 지원 요소는 요소 자체가 어떤 정보를 표현하지는 않지만 사용자에 대한 기능 등에 해당하는 스크립트를 지원하는 데 사용됨. 
+    </p>
+    <br>
+    <hr>
+    <p class="bf">HTML5 Markup</p>
+    <p class="con">• HTML 문서는 요소(element)와 태그(tag) 그리고 콘텐츠로 구성되어 있으며, 요소는 HTML의 의미를 가진 개념이라고 할 수 있음.</p>
+    <p class="cf">3. HTML5 Markup</p>
+    <p class="con">
+        <strong>• 태그(tag), 요소(element)</strong><br>
+        - 태그는 시작 태그와 종료 태그로 나눌 수 있으며 "&lt;"와 "&gt;"로 둘러싸여 있음.<br>
+        - 기본 형식은 시작 태그의 경우 &lt;tag&gt;의 형태를 가지며, 종료 태그의 경우에는 &lt;/tag&gt; 형태를 가짐.<br>
+        - 일부 태그의 경우, 종료 태그를 가지지 않는 경우도 있는데, 이를 ‘빈 요소(empty element)’라고 함.<br>
+        - 시작 태그와 종료 태그 모두를 포함하여 ‘요소(element)’라고 함.
+    </p>
+    <p class="con">
+    <strong>• 속성(attribute)</strong><br>
+    - 시작 태그는 필요에 따라 정해진 속성을 가질 수 있으며, 사용할 수 있는 속성은 태그마다 다를 수 있음.<br>
+    - 시작 태그 내에 여러 개의 속성을 선언할 수도 있는데, 이 경우 속성과 속성은 공백으로 구분하여 지정해야 함.<br>
+    - 속성에는 값을 가지지 않는 논리 속성도 있으며 논리 속성의 경우 XHTML1.0에서는 값을 생략할 수 없기 때문에 속성명을 값으로 지정해야 함.<br>
+    </p>
+    <br>
+    <hr>
+    <p class="bf">HTML5 서식</p>
+    <p class="cf">4. HTML5 서식</p>
+    <p class="con">
+        • HTML5는 HTML4.01이나 XHTML1.0 문법을 모두 허용하기 때문에 기존에 사용하던 마크업 문법을 그대로 사용할 수 있음.<br>
+        • 가령 HTML4.01에서 종료 태그의 생략을 허용했던 방식이나 XHTML1.0에서 빈 요소 선언 시 &lt;요소명 /&gt; 형식으로 기술했던 방식 모두를 허용함.<br>
+        • 이는 하위 호환성을 위한 정책으로, 과거 HTML4.01로 제작된 문서가 문법적인 느슨함으로 인해 발생했던 문제가 되풀이될 수 있기 때문에 좀 더 엄격한 규칙을 정하고 마크업 문서를 작성하는 것이 바람직할 것임.<br>
+    </p>
+    <p class="con">
+        <strong>• 종료 태그의 처리</strong><br>
+        - HTML5는 종료 태그를 생략할 수도 있음. 그러나 모든 요소가 종료 태그를 생략해도 되는 것은 아니기 때문에 종료 태그가 생략할 수 있는 요소를 사전에 확인해야 함.<br>
+        - 그러나 HTML5에서 종료 태그를 생략하는 것이 가능하다고 하더라도 기존 XHTML1.0의 규칙처럼 시작과 종료 태그를 정확히 명시하여 정형식(WellFormed) 구조로 마크업할 것을 권장함.<br>
+    </p>
+    <p class="con">
+        <strong>• 대소문자의 사용</strong><br>
+        - HTML5는 시작 및 종료 태그는 물론 속성에 대문자 또는 소문자를 사용할 수도 있음. 그러나 기존 XHTML1.0 규칙처럼 소문자를 사용할 것을 권장함.<br>
+    </p>
+    <p class="con">
+        <strong>• 빈 요소(Empty Element)</strong><br>
+        - HTML에서 &lt;meta&gt;, &lt;link&gt;, &lt;img&gt;, &lt;br&gt;, &lt;input&gt; 등 종료 태그를 가지고 있지 않은 요소를 ‘빈 요소(empty element)’라고 하는데, &lt;br&gt;기존 HTML4.01에서는 &lt;img&gt; 형식으로, XHTML1.0에서는 &lt;img /&gt; 형식으로 선언해야 하며, HTML5에서는 두 가지 방식 모두 허용하고 있음. 그러나 기존 XHTML1.0 규칙처럼 빈 요소는 /&gt; 형식으로 사용할 것을 권장함.<br>
+    </p>
+    <p class="con">
+        <strong>• 속성(attribute)과 값(Value)</strong><br>
+        - 논리 속성의 경우 속성값을 지정 또는 생략할 수 있음. 기존 XHTML1.0 규칙은 중복 선언하는 방식이므로 속성값 지정 생략을 권장함.<br>
+        - 속성 값은 인용 부호를 생략하거나 홀따옴표와 겹따옴표 등으로 구분할 수도 있음. 하지만 정확한 구분을 위해 겹따옴표로 구분함<br>
+    </p>
+    <p class="con">
+        <strong>• 잘못된 중첩 사용 불가능, 속성의 중복 사용 불가능, 문자 참조</strong><br>
+        - 시작 태그와 종료 태그의 중첩에 문제가 발생하지 않도록 해야 함.<br>
+        - 시작 태그에 동일한 속성을 중복하여 선언할 수 없음.<br>
+        - "&lt;", "&gt;", "&"와 같은 특수 문자의 경우, Characters Entity Name이나 Characters Entity Code로 변환하여 마크업해야 함.<br>
+    </p>
+    <p class="con">
+        <strong>• HTML5의 Doctype</strong><br>
+        - HTML5의 문서형 선언은 기존 HTML의 목적과 달리 모든 웹 브라우저에서 표준 모드(Standards Mode)로 렌더링될 수 있도록 하는 역할만을 담당<br>
+    </p>
+    <p class="con">
+        <strong>• HTML5의 인코딩</strong><br>
+        - HTML5 문서에서 간소화된 문자 인코딩 지정 방법과 기존 HTML 방식의 비교.<br>
+    </p>
+    <p class="bf">HTML5 요소</p>
+    <p class="cf">5. HTML5 요소</p>
+    <p class="con">
+        • <strong>&lt;section&gt;</strong> 요소<br>
+        – 일반적으로 콘텐츠를 장이나 절 등으로 구분하고자 할 경우에 사용<br>
+        – 반드시 헤딩 관련 요소를 사용하여 해당 섹션의 제목을 지정<br>
+        • 주의사항<br>
+        – div의 대치요소가 아님<br>
+        – 열이나 행을 구분하기 위해 사용해서는 안됨<br>
+    </p>
+    <section>
+        <h1>섹션(Section) 요소</h1>
+        <section>
+            <h2>섹션(Section) 요소의 사용</h2>
+            <p>
+                section 요소는 일반적으로 콘텐츠를 장이나 절 등으로 구분하고자 할
+                경우나 탭 형식으로 되어 있는 콘텐츠를 마크업 할 때 사용합니다.
+            </p>
+            <p>
+                장이나 절 등으로 구분되기 때문에 반드시 section 요소 안에는 제목을
+                의미하는 헤딩 관련 요소가 포함되어야 합니다.
+            </p>
+        </section>
+        <section>
+            <h2>섹션 요소의 콘텐츠 모델</h2>
+            <p>
+                section 요소는 섹셔닝 콘텐츠에 속한 요소로 아웃라인에 영향을 줍니다.
+            </p>
+        </section>
+    </section>
+    <p class="con">
+        • <strong>&lt;nav&gt;</strong> 요소<br>
+        – 내비게이션을 마크업 할 때<br>
+        – 내비게이션은 메인 메뉴나 서브 메뉴 등을 의미<br>
+        – 서로 다른 페이지로 이동할 수 있는 링크 포함<br>
+        • 주의사항<br>
+        – 모든 목록 형태의 하이퍼링크 콘텐츠에 nav요소를 사용하는 것은 바람직 하지않음<br>
+        – 페이지의 주요 내비게이션에 사용해야 한다고 규정<br>
+    </p>
+    <nav>
+        <ul>
+            <li><a href="standard.html">웹표준</a></li>
+            <li><a href="accessibility.html">웹 접근성</a></li>
+            <li><a href="qna.html">묻고 답하기</a></li>
+            <li><a href="pds.html">자료실</a></li>
+            <li><a href="join.html">회원가입</a></li>
+            <li><a href="sitemap.html">사이트맵</a></li>
+        </ul>
+    </nav>
+    <p class="con">
+        • <strong>&lt;article&gt;</strong> 요소<br>
+        – 독립된 하나의 콘텐츠<br>
+        – 블로그의 포스트, 뉴스 본문<br>
+        – 독립된 하나의 콘텐츠로 분류할 때 해당 콘텐츠를 별도로 배포하거나 재사용하기 위한 경우<br>
+        • 주의사항<br>
+        – &lt;section&gt;요소와 구문이 애매할 경우도 있기 때문에 콘텐츠의 의미가 성격을 고려하여 사용하는 것이 바람직<br>
+    </p>
+    <p class="con">
+        • <strong>&lt;aside&gt;</strong> 요소<br>
+        – 메인 콘텐츠와 관련이 적은 콘텐츠를 마크업할 때 사용<br>
+        – 사이드 바, 광고 등의 콘텐츠가 적절 (부가적인 콘텐츠)<br>
+        • 주의사항<br>
+        – 명확히 정의하기 어려운 경우도 많다.<br>
+        – 콘텐츠의 틀을 정해놓고 사용하기보다 콘텐츠의 중요성이나 의미를 고려하여 사용<br>
+    </p>
+    <p class="con">
+        • <strong>&lt;header&gt;</strong> 요소<br>
+        – 페이지 헤더, 섹션 헤더로 사용<br>
+        – 페이지 헤더 : 제목, 로고, 검색 등을 포함<br>
+        – 섹션 헤더 : 내에서 사용 시 해당 섹션의 헤더의 의미<br>
+        • <strong>&lt;footer&gt;</strong> 요소<br>
+        – 페이지 푸터, 섹션 푸터로 사용<br>
+        – 페이지 푸터 : 사이트 연락처 정보 및 저작권<br>
+        – 섹션 푸터 : 해당 섹션의 푸터의 의미<br>
+    </p>
+    <br>
+</body>
+</html>
