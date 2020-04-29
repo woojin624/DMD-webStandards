@@ -514,6 +514,23 @@
             </p>
         </section>
     </section>
+    <section style="border: 1px solid black; padding: 10px; text-align: center; background: rgb(227, 164, 125);">
+        <h1>커피</h1>
+        <div style="display: flex;">
+            <section style="border: 1px solid black; padding: 10px; margin: 10px; flex: 0.33;">
+                아메리카노(americano)는 커피 원액에 물을 희석시킨 커피로 에스프레소의 진하고 쓴맛을 부드럽고 가볍게 만든 음료다
+            </section>
+            <section style="border: 1px solid black; padding: 10px; margin: 10px; flex: 0.33;">
+                카페라떼(caffe latte)는 커피원액에 우유를 듬뿍 넣은 부드러운 커피이다
+            </section>
+            <section style="border: 1px solid black; padding: 10px; margin: 10px; flex: 0.33;">
+                카푸치노(cappuccino)는 커피 원액에 우유와 우유 거품을 넣은 커피로 라떼보다는 다소 진한 맛, 우유의 거품을 풍부하게 느낄 수 있는
+
+                커피이다
+            </section>
+        </div>
+
+    </section>
     <p class="con">
         • <strong>&lt;nav&gt;</strong> 요소<br>
         – 내비게이션을 마크업 할 때<br>
@@ -524,13 +541,10 @@
         – 페이지의 주요 내비게이션에 사용해야 한다고 규정<br>
     </p>
     <nav>
-        <ul>
-            <li><a href="standard.html">웹표준</a></li>
-            <li><a href="accessibility.html">웹 접근성</a></li>
-            <li><a href="qna.html">묻고 답하기</a></li>
-            <li><a href="pds.html">자료실</a></li>
-            <li><a href="join.html">회원가입</a></li>
-            <li><a href="sitemap.html">사이트맵</a></li>
+        <ul style="display: flex; ">
+            <li style="margin: 15px;"><a href="main.html">메인</a></li>
+            <li style="margin: 15px;"><a href="depth1.html">1뎁스</a></li>
+            <li style="margin: 15px;"><a href="depth2.html">2뎁스</a></li>
         </ul>
     </nav>
     <p class="con">
@@ -541,6 +555,19 @@
         • 주의사항<br>
         – &lt;section&gt;요소와 구문이 애매할 경우도 있기 때문에 콘텐츠의 의미가 성격을 고려하여 사용하는 것이 바람직<br>
     </p>
+    <article style="border: 1px solid black; padding: 10px;">
+        <h1>웹표준퍼블리싱-D-21961095-장우진</h1> 
+        <p>제출합니다~!</p>
+        <footer>
+            <p><h5>장우진192D / 2020-04-29 17:00</h5></p>
+        </footer> 
+        <article style="border: dotted grey; padding: 10px;">
+        <p>RE: 참 잘했어요</p> 
+        <footer> 
+            <p><h5>조희근교수 / 2020-04-30 12:00</h5></p>
+        </footer>      
+        </article> 
+    </article>
     <p class="con">
         • <strong>&lt;aside&gt;</strong> 요소<br>
         – 메인 콘텐츠와 관련이 적은 콘텐츠를 마크업할 때 사용<br>
@@ -549,15 +576,47 @@
         – 명확히 정의하기 어려운 경우도 많다.<br>
         – 콘텐츠의 틀을 정해놓고 사용하기보다 콘텐츠의 중요성이나 의미를 고려하여 사용<br>
     </p>
+    <aside style="border: 2px solid black; padding: 10px;">
+        <h1>포탈사이트</h1>
+        <ul>
+            <li>
+                <a href="http://www.google.com">구글</a>
+            </li> 
+            <li>
+                <a href="http://www.naver.com">네이버</a> 
+            </li> 
+            <li>
+                <a href="http://www.daum.net">다음</a>
+            </li> 
+        </ul> 
+    </aside>      
     <p class="con">
         • <strong>&lt;header&gt;</strong> 요소<br>
         – 페이지 헤더, 섹션 헤더로 사용<br>
         – 페이지 헤더 : 제목, 로고, 검색 등을 포함<br>
         – 섹션 헤더 : 내에서 사용 시 해당 섹션의 헤더의 의미<br>
+        <header style="background: rgb(61, 223, 153); padding: 20px; border: 1px dotted black; ">
+            일반 헤더입니다.
+        </header>
+        <section>
+            <header  style="background: hotpink; padding: 20px; border: 1px dotted black;">
+                섹션 헤더입니다.
+            </header>
+        </section>
         • <strong>&lt;footer&gt;</strong> 요소<br>
         – 페이지 푸터, 섹션 푸터로 사용<br>
         – 페이지 푸터 : 사이트 연락처 정보 및 저작권<br>
         – 섹션 푸터 : 해당 섹션의 푸터의 의미<br>
+        <footer style="background: rgb(61, 223, 153); padding: 20px; border: 1px dotted black; ">
+            일반 푸터입니다.
+            <h6>서울시 마포구 상수동 324-1 한주빌딩 5층 | seul@gmail.com</h6>
+        </footer>
+        <section>
+            <footer style="background: hotpink; padding: 20px; border: 1px dotted black;">
+                섹션푸터입니다.
+                <h6>서울시 마포구 상수동 324-1 한주빌딩 5층 | seul@gmail.com</h6>
+            </footer>
+        </section>
     </p>
     <br>
 </body>
