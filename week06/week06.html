@@ -5,28 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹표준퍼블리싱 과제</title>
     <style>
-        body{
-          margin: 0 200px;
-        }
-        .bf {
-          font-size: 36px;
-          font-weight: 600;
-          color: rgb(65, 200, 205);
-        }
-        .cf {
-          font-size: 26px;
-          font-weight: 600;
-          color:rgb(31, 85, 85)
-        }
-        .con{
-          border : 1px solid lightgray;
-          padding: 10px;
-          line-height: 1.6;
-        }
-        hr {
-          margin: 15px 0;
-        }
-      </style>
+        @import url(test.css);
+    </style>
 </head>
 <body>
     <p class="bf">웹표준 퍼블리싱 21961095 장우진</p>
@@ -529,7 +509,6 @@
                 커피이다
             </div>
         </div>
-
     </section>
     <p class="con">
         • <strong>&lt;nav&gt;</strong> 요소<br>
@@ -619,5 +598,137 @@
         </section>
     </div>
     <br>
+    <hr>
+    <hr>
+    <br>
+<!-- css 강의 시작 -->
+    <p class="bf">CSS 선택자</p>
+    <p class="cf">1. 전체 선택자</p>
+    <div class="con">
+      • 모든 요소를 선택하는 방법으로 “*”를 선택자로 선언한다<br>
+      • 유니버설 선택자
+    </div>
+    <p class="cf">2. 요소 선택자</p>
+    <div class="con">
+      • HTML 요소를 선택하는 방법<br>
+      • type선택자, 태그 선택자<br>
+      • h1, p, div 등
+    </div>
+    <p class="cf">3. class, id 선택자</p>
+    <div class="con">
+      • XHTML 요소에 class나 id 속성을 부여한 경우 해당 class명이나
+      id명으로 접근하여 선택<br>
+      • class명은 여러 번 사용할 수 있기 때문에 여러 가지 요소들을
+      한꺼번에 선택하여 일관된 스타일을 지정할 때 사용<br>
+      • 특정 id값을 가지고 있는 유일한 요소에 접근하여 스타일을 지정할
+      때는 id 선택자 형식을 사용<br>
+      <br>
+      <div class="class">class 선택자</div>
+      <div id="id">id 선택자</div>
+    </div>
+    <p class="cf">4. 가상 요소, 가상 클래스</p>
+    <div class="con">
+      • 실제로 존재하지 않는 요소를 마치 존재하는 것 처럼 이용하는 방법<br>
+      • 가상 요소 선택자<br>
+      – 콘텐츠 영역의 앞, 뒤에 가상 콘텐츠 추가<br>
+      – :before, :after, :first-line, :first-letter<br>
+      • 가상 클래스 선택자<br>
+      – 상황에 따라 구분<br>
+      – :first-child, :link, :visited, :hover, :active, :focus<br>
+      <br>
+      <br>
+      <br>
+      • :first-line – 요소의 첫번째 줄에 있는 콘텐츠만 선택하여 스타일을 지정, 크기에 따라 유동적
+      <p class="p_example first-line">first-line<br>사용예시입니다.</p>
+      • :first-letter – 요소의 첫 글자만 선택하여 스타일을 지정
+      <p class="p_example first-letter">first-letter 사용예시입니다.</p>
+      • :before, :after – 가상의 콘텐츠를 이전이나 이후에 추가할 수 있는 선택자, content 속성에 원하는 문자열을 지정, 스타일을 위해서 사용. 문서에 내용을 추가하는 용도로 사용하지 않도록 주의
+      <p class="p_example before">:before 사용예시입니다.</p>
+      <p class="p_example after">:after 사용예시입니다.</p>
+      • :first-child – 첫 번째 자식 요소에만 스타일을 적용할 수 있는 선택자, 두 번째 자식요소부터는 스타일이 적용되지 않음
+      <ul class="child">
+        <li>:first-child 사용예시입니다1</li>
+        <li>:first-child 사용예시입니다2</li>
+        <li>:first-child 사용예시입니다3</li>
+      </ul>
+      • :link, :visited, :hover, :active, :focus<br>
+      – :link 방문하지 않은 링크<br>
+      – :visited 방문한 링크<br>
+      – :hover 마우스 오버<br>
+      – :active 활성화<br>
+      – :focus 포커스가 생긴 경우<br>
+    </div>
+    <p class="cf">5. 선택자 조합</p>
+    <div class="con">
+      • 하위 선택자<br>
+      – 상위 요소가 포함하고 있는 모든 하위 요소에 스타일을 지정할 때<br>
+      – 선택자와 선택자를 공백으로 구분하여 선언<br>
+      <p>ex) div p {color:red;} </p>
+      • 자식 선택자<br>
+      – 부모 요소의 바로 다음에 있는 자식 요소에 스타일을 적용<br>
+      – 선택자와 선택자를 왼쪽 부등호로 구분하여 선언<br>
+      <p>ex) div &gt; p {color:blue;}</p>
+    </div>
+    <p class="cf">6. 선택자 그룹화</p>
+    <div class="con">
+      • 다수의 요소에 똑같은 선언을 지정할 경우<br>
+      – 반복해서 작성하는 대신 선택자를 그룹화하여 표현<br>
+      – 콤마(,)를 사용하여 구분<br>
+      <p>ex) div p, #tit, .box {background-color:yellow;}</p>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <p class="bf">CSS 개념 및 단위</p>
+    <p class="cf">1. 상속(inherit)</p>
+    <div class="con">
+      • 상위요소에 적용한 스타일이 하위 요소까지<br>
+      – 모든 스타일이 똑같이 상속되는 것이 아니라 일부는 상속의 대상에서 제외<br>
+      – 콤마(,)를 사용하여 구분<br>
+    </div>
+    <p class="cf">2. 겹침(cascading)과 개별성(specificity)</p>
+    <div class="con">
+      • 하나의 콘텐츠에 여러 가지의 스타일이 중복 적용되어 충돌이 발생했을 때<br>
+
+    </div>
+    <p class="cf">3. 주석</p>
+    <div class="con">
+      • /* ~~~ */<br>
+      – 불필요한 주석 사용 지양<br>
+      – 버전 표시, 최종 갱신일 등<br>
+    </div>
+    <p class="cf">4. 단위</p>
+    <div class="con">
+      • 절대단위<br> 
+      – pt, cm, mm, pc, in<br>
+      • 상대 단위<br> 
+      – px, ex, em, %<br>
+      <hr>
+      <div class="px">
+        px 단위 사용예시입니다. 20px
+      </div>
+      <hr>
+      <div class="ex">
+        ex 단위 사용예시입니다. 4ex
+      </div>
+      <hr>
+      <div class="em">
+        em 단위 사용예시입니다. 1em
+      </div>
+      <hr>
+      <div class="per">
+        % 단위 사용예시입니다. 120%
+      </div>
+    </div>
+    <p class="cf">5. 색상</p>
+    <div class="con">
+      • 색상명<br>
+      – black, silver, gray, white, maroon, red, purple, teal, fuchsia, green, lime, olive, yellow, navy, blue, aqua<br>
+      • 16진수 코드<br>
+      – <span class="red">빨간색</span>,<span class="green">녹색</span>,<span class="blue">파란색</span>의 상대적 양. 3개의 16진수로 구성<br>
+      – #FF0000 > #F00<br>
+    </div>
+
+
 </body>
 </html>

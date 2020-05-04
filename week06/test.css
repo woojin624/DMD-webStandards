@@ -1,0 +1,81 @@
+body {
+  margin: 0 200px;
+}
+.bf {
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(65, 200, 205);
+}
+.cf {
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(31, 85, 85);
+}
+.con {
+  border: 1px solid lightgray;
+  padding: 10px;
+  line-height: 1.6;
+}
+hr {
+  margin: 15px 0;
+}
+.class {
+  font-weight: 700;
+  color: azure;
+  background: #000;
+}
+#id {
+  font-size: 20px;
+  color: blue;
+  background: red;
+}
+.p_example {
+  border: 1px solid grey;
+  padding: 10px;
+}
+.first-line:first-line {
+  color: white;
+  background: #000;
+}
+.first-letter:first-letter {
+  font-size: 30px;
+  font-weight: bold;
+}
+.before:before {
+  content: "비포어";
+  color: red;
+}
+.after:after {
+  content: "애프터";
+  color: blueviolet;
+}
+.child > li:first-child {
+  font-size: 22px;
+  background: #000;
+  color: white;
+}
+.px {
+  font-size: 20px;
+  color: aqua;
+}
+.ex {
+  font-size: 4ex;
+  color: blue;
+}
+.em {
+  font-size: 1em;
+  color: darkmagenta;
+}
+.per {
+  font-size: 120%;
+  color: green;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue;
+}
