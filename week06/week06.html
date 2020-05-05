@@ -689,7 +689,43 @@
     <p class="cf">2. 겹침(cascading)과 개별성(specificity)</p>
     <div class="con">
       • 하나의 콘텐츠에 여러 가지의 스타일이 중복 적용되어 충돌이 발생했을 때<br>
-
+      <div class="cas">
+        <div class="cat">
+          <div class="top">선택자</div>
+          <div class="top">사용 예</div>
+          <div class="top">특정도</div>
+        </div>
+        <div class="cascon">
+          <div class="odd">Type 선택자</div>
+          <div class="odd">p</div>
+          <div class="odd">1</div>
+        </div>
+        <div class="cascon">
+          <div class="even">Class 선택자</div>
+          <div class="even">.note</div>
+          <div class="even">10</div>
+        </div>
+        <div class="cascon">
+          <div class="odd">Id 선택자</div>
+          <div class="odd">#gnb</div>
+          <div class="odd">100</div>
+        </div>
+        <div class="cascon">
+          <div class="even">Inline 스타일</div>
+          <div class="even">style="color:red"</div>
+          <div class="even">1000</div>
+        </div>
+        <div class="cascon">
+          <div class="odd">가상요소</div>
+          <div class="odd">:first-line</div>
+          <div class="odd">1</div>
+        </div>
+        <div class="cascon">
+          <div class="even">가상클래스</div>
+          <div class="even">:hover</div>
+          <div class="even">10</div>
+        </div>
+      </div>
     </div>
     <p class="cf">3. 주석</p>
     <div class="con">
@@ -728,7 +764,9 @@
       – <span class="red">빨간색</span>,<span class="green">녹색</span>,<span class="blue">파란색</span>의 상대적 양. 3개의 16진수로 구성<br>
       – #FF0000 > #F00<br>
     </div>
-
+    <br>
+    <hr>
+    <br>
 
 </body>
 </html>

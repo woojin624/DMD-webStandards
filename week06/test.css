@@ -54,6 +54,37 @@ hr {
   background: #000;
   color: white;
 }
+.cas {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.cat,
+.cascon {
+  display: flex;
+  flex-direction: row;
+}
+.top,
+.odd,
+.even {
+  flex: 0.33;
+  text-align: center;
+  line-height: 1.8;
+  margin: 1px;
+}
+.top {
+  background: cornflowerblue;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.odd {
+  background: rgb(172, 207, 222);
+}
+.even {
+  background: rgb(204, 221, 233);
+}
+
 .px {
   font-size: 20px;
   color: aqua;
@@ -74,8 +105,8 @@ hr {
   color: red;
 }
 .green {
-  color: green;
+  color: rgb(0, 255, 0);
 }
 .blue {
-  color: blue;
+  color: #0000ff;
 }
