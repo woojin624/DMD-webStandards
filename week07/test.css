@@ -1,0 +1,141 @@
+body {
+  margin: 0 200px;
+}
+.bf {
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(65, 200, 205);
+}
+.cf {
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(31, 85, 85);
+}
+.con {
+  border: 1px solid lightgray;
+  padding: 10px;
+  line-height: 1.6;
+}
+hr {
+  margin: 15px 0;
+}
+.class {
+  font-weight: 700;
+  color: azure;
+  background: #000;
+}
+#id {
+  font-size: 20px;
+  color: blue;
+  background: red;
+}
+.p_example {
+  border: 1px solid grey;
+  padding: 10px;
+}
+.first-line:first-line {
+  color: white;
+  background: #000;
+}
+.first-letter:first-letter {
+  font-size: 30px;
+  font-weight: bold;
+}
+.before:before {
+  content: "비포어";
+  color: red;
+}
+.after:after {
+  content: "애프터";
+  color: blueviolet;
+}
+.child > li:first-child {
+  font-size: 22px;
+  background: #000;
+  color: white;
+}
+.cas {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.cat,
+.cascon {
+  display: flex;
+  flex-direction: row;
+}
+.top,
+.odd,
+.even {
+  flex: 0.33;
+  text-align: center;
+  line-height: 1.8;
+  margin: 1px;
+}
+.top {
+  background: cornflowerblue;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.odd {
+  background: rgb(172, 207, 222);
+}
+.even {
+  background: rgb(204, 221, 233);
+}
+
+.px {
+  font-size: 20px;
+  color: aqua;
+}
+.ex {
+  font-size: 4ex;
+  color: blue;
+}
+.em {
+  font-size: 1em;
+  color: darkmagenta;
+}
+.per {
+  font-size: 120%;
+  color: green;
+}
+.red {
+  color: red;
+}
+.green {
+  color: rgb(0, 255, 0);
+}
+.blue {
+  color: #0000ff;
+}
+.bds {
+  width: 360px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+.widthHeight {
+  background: cornflowerblue;
+}
+.borders {
+  display: flex;
+}
+.boxBorder1 {
+  background: yellow;
+  border: 2px solid black;
+}
+.boxBorder2 {
+  background: yellowgreen;
+  border: 2px dotted blue;
+}
+.boxBorder3 {
+  background: blueviolet;
+  border-right: 4px double red;
+  border-top: 2px dashed red;
+}
