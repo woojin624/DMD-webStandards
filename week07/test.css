@@ -139,3 +139,166 @@ hr {
   border-right: 4px double red;
   border-top: 2px dashed red;
 }
+.marginTs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mT1 {
+  background: rgb(139, 139, 219);
+  margin-right: 100px;
+}
+.mT2 {
+  background: rgb(218, 146, 146);
+  margin: 30px;
+}
+.mT3 {
+  background: orange;
+  margin: 20px 60px;
+}
+.mT4 {
+  background: yellow;
+  margin: 5px 100px 10px;
+}
+.marginCollapse {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.mC1 {
+  background: rgb(127, 127, 255);
+  margin-bottom: 20px;
+}
+.mC2 {
+  background: rgb(255, 131, 131);
+  margin-top: 60px;
+}
+.marginCollapse > p {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  top: 140px;
+  left: 130px;
+}
+.paddingTs {
+  display: flex;
+}
+.pTI1 {
+  background: rgb(255, 189, 189);
+}
+.pT1 {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid black;
+}
+.pTI2 {
+  background: rgb(255, 189, 189);
+}
+.pT2 {
+  margin: 10px;
+  padding: 20px 40px;
+  border: 1px solid black;
+}
+.floatF {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  height: 140px;
+}
+.fF1 {
+  background: rgb(188, 255, 168);
+  float: left;
+}
+.fF2 {
+  background: rgb(188, 255, 168);
+  float: right;
+}
+.clearfix {
+  clear: both;
+}
+.positionBox {
+  position: relative;
+  width: 700px;
+  height: 600px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pB1 {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: yellow;
+}
+.pB2 {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  background: green;
+}
+.tFrame {
+  border: 1px solid black;
+  margin: 10px;
+  width: 80%;
+  padding: 10px;
+  background: rgb(255, 246, 246);
+}
+.ff {
+  font-family: "돋움", Dotum, "굴림", Gulim, sans-serif;
+}
+.fs {
+  font-size: 34px;
+}
+.fw {
+  font-weight: bold;
+}
+.fst {
+  font-style: italic;
+}
+.fv {
+  font-variant: small-caps;
+}
+.fff {
+  font: bold italic small-caps 24px /1.6 "돋움", sans-serif;
+}
+.ta1 {
+  text-align: center;
+}
+.ta2 {
+  text-align: right;
+}
+.ta3 {
+  text-align: left;
+}
+.va1 {
+  vertical-align: top;
+  font-size: 20px;
+}
+.va2 {
+  vertical-align: top;
+  font-size: 30px;
+}
+.td1 {
+  text-decoration: underline;
+}
+.td2 {
+  text-decoration: overline;
+}
+.td3 {
+  text-decoration: line-through;
+}
+.ls {
+  letter-spacing: 6px;
+}
+.lh {
+  line-height: 40px;
+}
+.ti {
+  text-indent: 150px;
+}
+.ttf {
+  text-transform: uppercase;
+}
+.ws {
+  white-space: pre;
+}

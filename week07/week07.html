@@ -815,11 +815,30 @@
       – margin:5px 10px : 위/아래, 좌/우 적용<br>
       – margin:5px 10px 15px : 위, 좌/우, 아래 적용<br>
       – margin:5px 10px 15px 20px : 위, 우, 아래, 좌 적용<br>
+      <div class="marginTs">
+        <div class="bds mT1">
+          margin-right: 100px;
+        </div>
+        <div class="bds mT2">
+          margin: 30px;
+        </div>
+        <div class="bds mT3">
+          margin: 20px 60px;
+        </div>
+        <div class="bds mT4">
+          margin: 5px 100px 10px;
+        </div>
+      </div>
     </div><br>
     <div class="con">
       • margin collapsing (마진 겹침 현상)<br>
       – 세로 방향으로 마진이 만났을 경우 겹치는 현상<br>
       – 마진이 하나로 합쳐질 때 두 개의 마진값 중에서 큰 값으로 적용<br>
+      <div class="marginCollapse">
+        <div class="bds mC1">margin-bottom: 20px;</div>
+        <div class="bds mC2">margin-top: 60px;</div>
+        <p>margin: 60px;</p>
+      </div>
     </div><br>
     <div class="con">
       • padding<br>
@@ -829,6 +848,15 @@
       – padding:5px 10px : 위/아래, 좌/우 적용<br>
       – padding:5px 10px 15px : 위, 좌/우, 아래 적용<br>
       – padding:5px 10px 15px 20px : 위, 우, 아래, 좌 적용<br>
+      <div class="paddingTs">
+        
+        <div class="pT1">
+          <div class="bds pTI1">padding: 20px;</div>
+        </div>
+        <div class="pT2">
+          <div class="bds pTI2">padding: 20px 40px</div>
+        </div>
+      </div>
     </div><br>
 
     <p class="cf">2. 플로트(float) & Clear</p>
@@ -838,6 +866,13 @@
       – 문서의 일반적인 흐름에 영향을 받지 않으면서 이동된 위치에 뜸<br>
       – 주변 박스는 위치가 변경되어 플로트된 요소와 나란히 배치<br>
       – float : left | right | none | inherit<br>
+      <div class="floatF">
+        <div class="bds fF1">float: left;</div>
+      </div>
+      <div class="floatF">
+        <div class="bds fF2">float: right;</div>
+      </div>
+      <div class="clearfix"></div>
     </div><br>
     <div class="con">
       • clear<br>
@@ -869,6 +904,11 @@
       – 본문 요소 위에 떠 있는 형태 / layer / 본문 요소와 겹쳐짐<br>
       – 상위 요소가 모두 static이면 body를 기준으로<br>
       – 가장 가까운 부모가 static이 아니면 해당 요소가 컨테이닝 블록이 됨<br>
+      <div class="positionBox">
+        <p>position: relative;</p>
+        <div class="bds pB1">top: 20px; right: 30px;<br>position: absolute;</div>
+        <div class="bds pB2">bottom: 10px; left: 50px;<br>position: absolute;</div>
+      </div>
     </div><br>
     <div class="con">
       • position:fixed<br>
@@ -884,6 +924,9 @@
       – 하나 이상(“,”로 구분)의 글꼴을 선언<br>
       – 마지막에 대표 패밀리(serif, sans-serif, cursive, fantasy, monospace)를 명시<br>
       – font-family : 글꼴 패밀리명, 대표 패밀리명<br>
+      <div class="tFrame">
+        <span class="ff">font-family:"돋움", Dotum, "굴림", Gulim, sans-serif;</span>
+      </div>
     </div><br>
     <div class="con">
       • font-size<br>
@@ -891,6 +934,9 @@
       – 절대크기 : small, medium, large, pt, pc, cm, mm<br>
       – 상대크기 : px, em, ex, %<br>
       – font-size : 키워드 | 길이 | 퍼센트 | inherit<br>
+      <div class="tFrame">
+        <span class="fs">font-size: 34px;</span>
+      </div>
     </div><br>
     <div class="con">
       • font-weight<br>
@@ -898,30 +944,47 @@
       – normal, bold, bolder, lighter<br>
       – 100~900 (normal:400, bold:700)<br>
       – font-weight : 키워드 | 100~900 | inherit<br>
+      <div class="tFrame">
+        <span class="fw">font-weight: bold;</span>
+      </div>
     </div><br>
     <div class="con">
       • font-style<br>
       – 글꼴의 스타일을 지정할 때<br>
       – normal, italic, oblique<br>
       – font-style : normal | italic | oblique<br>
+      <div class="tFrame">
+        <span class="fst">font-style: italic;</span>
+      </div>
     </div><br>
     <div class="con">
       • font-variant<br>
       – 영문 글꼴의 소문자를 대문자로 변경할 때<br>
       – normal, small-caps<br>
       – small-caps : 크기가 작은 대문자로 출력<br>
+      <div class="tFrame">
+        <span class="fv">font-variant: small-caps;</span>
+      </div>
     </div><br>
     <div class="con">
       • font<br>
       – 6가지 속성을 선언 순서에 맞춰 단축 표현<br>
       – font-family와 font-size는 반드시 포함<br>
       – [weight | style | variant]|[size]|[/line-height]|[family]<br>
+      <div class="tFrame">
+        <span class="fff">font: bold italic small-caps 24px /1.6 "돋움",sans-serif;</span>
+      </div>
     </div><br>
     <div class="con">
       • text-align<br>
       – 단락의 텍스트를 가로 기준으로 정렬할 때<br>
       – left, center, right, justify<br>
       – text-align : left | center | right | justify<br>
+      <div class="tFrame">
+        <div class="ta1">text-align: center;</div>
+        <div class="ta2">text-align: right;</div>
+        <div class="ta3">text-align: left;</div>
+      </div>
     </div><br>
     <div class="con">
       • vertical-align<br>
@@ -930,17 +993,29 @@
       – 인라인 요소, 이미지 요소, input 요소<br>
       – 블록 요소 적용 안됨. 테이블의 th, td 가능<br>
       – vertical-align : baseline | sub | super | top | text-top | middle | bottom | textbottom | 길이 | 퍼센트 | inherit<br>
+      <div class="tFrame">
+        <span class="va1">vertical-align: top</span>
+        <span class="va2">vertical-align: top</span>
+      </div>
     </div><br>
     <div class="con">
       • text-decoration<br>
       – 밑줄을 긋거나 취소선 등의 효과를 적용<br>
       – text-decoration : none | underline | overline | line-through | inherit <br>
+      <div class="tFrame">
+        <div class="td1">text-decoration: underline;</div>
+        <div class="td2">text-decoration: overline;</div>
+        <div class="td3">text-decoration: line-through;</div>
+      </div>
     </div><br>
     <div class="con">
       • letter-spacing<br>
       – 문자 간격을 조절할 때<br>
       – px, em 단위 사용. 포토샵의 자간 조정 기능처럼 미세한 조정은 어려움.<br>
       – letter-spacing : 길이 | normal | inherit <br>
+      <div class="tFrame">
+        <span class="ls">letter-spacing: 6px;</span>
+      </div>
     </div><br>
     <div class="con">
       • line-height<br>
@@ -948,20 +1023,26 @@
       – font-size로 지정된 글자 크기를 포함하여 글자의 위쪽과 아래쪽 여백까지의 크기<br>
       – px, em, 실수<br>
       – line-height : normal | 실수 | 길이 | 퍼센트 | inherit<br>
-    </div><br>
-    <div class="con">
-      • line-height<br>
+      <div class="tFrame">
+        <span class="lh">line-height: 40px;<br>line-height: 40px;<br>line-height: 40px;<br>line-height: 40px;</span>
+      </div>
     </div><br>
     <div class="con">
       • text-indent<br>
       – 단락 첫 번째 줄 들여쓰기<br>
       – 음수를 지정하여 내어쓰기 효과도 가능<br>
       – text-indent : 길이 | 퍼센트 | inherit <br>
+      <div class="tFrame">
+        <p class="ti">text-indent: 150px;</p>
+      </div>
     </div><br>
     <div class="con">
       • text-transform<br>
       – 대문자로, 소문자로, 첫 글자를 대문자로<br>
       – text-transform : none | uppercase | lowercase | capitalize | inherit <br>
+      <div class="tFrame">
+        <span class="ttf">text-transform: uppercase;</span>
+      </div>
     </div><br>
     <div class="con">
       • white-space<br>
@@ -969,6 +1050,11 @@
       – 하나 이상의 연속적인 공백을 입력한 형태 그대로 출력하려 할 때<br>
       – 자동 줄바꿈을 허용하지 않을 경우<br>
       – white-space : normal | nowrap | pre | inherit <br>
+      <div class="tFrame">
+        <span class="ws">white-space:pre;          white-space:pre;          white-space:pre;</span>
+      </div>
     </div><br>
+    <hr>
+    <br>
 </body>
 </html>
