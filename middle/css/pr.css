@@ -1,0 +1,62 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/illustrator/ai_main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -9999;
+}
+.main_box {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 1;
+}
+.main_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 130px;
+  z-index: 2;
+}
+.main_top {
+  margin-bottom: 30px;
+}
+.main_top img {
+  width: 260px;
+}
+.main_mid {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+.main_bot {
+  margin-top: 190px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_bot img {
+  margin-top: 10px;
+  width: 40px;
+}
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}

@@ -1,0 +1,154 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/illustrator/ai_main.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -9999;
+}
+.main_box {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 1;
+}
+.main_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 130px;
+  z-index: 2;
+}
+.main_top {
+  margin-bottom: 30px;
+}
+.main_top img {
+  width: 260px;
+}
+.main_mid {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+.main_bot {
+  margin-top: 190px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_bot img {
+  margin-top: 10px;
+  width: 40px;
+}
+.second {
+  margin: 100px 0;
+}
+.second_wrap {
+  width: 1120px;
+  margin: 0 auto;
+}
+.sw_img {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.sw_img img {
+  width: 1120px;
+}
+.img_box {
+  left: 140px;
+  width: 420px;
+  height: 540px;
+  background: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.shapes {
+  display: flex;
+  flex-direction: row;
+}
+.s1,
+.s2 {
+  width: 210px;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ib_title {
+  font-size: 24px;
+  margin: 40px 0;
+  line-height: 1.8;
+}
+.ib_con {
+  font-size: 14px;
+  margin: 40px 0;
+  line-height: 1.6;
+}
+.third {
+  margin: 80px 0;
+}
+.third_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tw_title {
+  font-size: 36px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+.tw_con {
+  text-align: center;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+.tw_img {
+  width: 100vw;
+  margin: 40px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tw_img img {
+  z-index: 2;
+}
+.tw_box {
+  width: 100vw;
+  height: 440px;
+  background: rgb(255, 181, 28);
+  position: absolute;
+  z-index: 1;
+}
+.fourth_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fw_title {
+  font-size: 36px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+.fw_img {
+  margin: 40px;
+}
+.fw_img img {
+  width: 1120px;
+}
