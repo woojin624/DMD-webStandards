@@ -45,6 +45,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(25px);
+    opacity: 0;
+  }
 }
 .main_bot img {
   margin-top: 10px;
@@ -119,4 +136,7 @@
 .img_name {
   margin-top: 10px;
   font-weight: 500;
+}
+.hidden {
+  display: none;
 }

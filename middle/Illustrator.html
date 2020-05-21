@@ -15,29 +15,33 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="#nav" class="fbr">
         <div class="nav_frame">
           <div class="nav_ul_box1">
             <ul>
-              <li><img src="images/icon/icon_adobe_logo.png" alt="" /></li>
-              <li>Adobe</li>
+              <li>
+                <a href="index.html"
+                  ><img src="images/icon/icon_adobe_logo.png" alt="Logo"
+                /></a>
+              </li>
+              <li><a href="index.html">Adobe</a></li>
             </ul>
           </div>
           <div class="nav_ul_box2">
             <ul>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-              <li>PremierePro</li>
+              <li><a href="photoshop.html">Photoshop</a></li>
+              <li><a href="Illustrator.html">Illustrator</a></li>
+              <li><a href="premierePro.html">PremierePro</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div class="main">
+    <div class="main fbr">
       <div class="main_box"></div>
-      <div class="main_wrap">
+      <div class="main_wrap fbc">
         <div class="main_top">
-          <img src="images/icon/icon_ai_page.png" alt="" />
+          <img src="images/icon/icon_ai_page.png" alt="ai" />
         </div>
         <div class="main_mid">
           Adobe Illustrator와 함께 <br />
@@ -45,22 +49,22 @@
         </div>
         <div class="main_bot">
           <div>Scroll</div>
-          <img src="images/directional_white.png" alt="" />
+          <img src="images/directional_white.png" alt="arrow" />
         </div>
       </div>
     </div>
     <div class="second">
       <div class="second_wrap">
         <div class="sw_img">
-          <img src="images/illustrator/ai_howto.png" alt="" />
-          <div class="img_box">
+          <img src="images/illustrator/ai_howto.png" alt="ai_howto" />
+          <div class="img_box fbc">
             <div class="ib_title">
               Illustrator에서 점, 선, 면을 이용해<br />
               다양한 작품을 만들어볼까요?
             </div>
             <div class="shapes">
-              <div class="s1"></div>
-              <div class="s2"></div>
+              <div class="s1 fbr"><div class="rec"></div></div>
+              <div class="s2 fbr"><div class="rec2"></div></div>
             </div>
             <div class="ib_con">
               수백만 명의 디자이너와 아티스트가 업계 표준의 벡터 그래픽<br />
@@ -75,7 +79,7 @@
       </div>
     </div>
     <div class="third">
-      <div class="third_wrap">
+      <div class="third_wrap fbc">
         <div class="tw_title">
           iPad에 특화된 Adobe Illustrator 출시 예정
         </div>
@@ -87,17 +91,17 @@
           파일은 클라우드에 자동으로 동기화되므로 어디에서나 일러스트레이션을
           생동감 있게 표현할 수 있습니다. 2020년에 출시될 예정입니다.
         </div>
-        <div class="tw_img">
-          <img src="images/illustrator/ai_ipad.png" alt="" />
+        <div class="tw_img fbr">
+          <img src="images/illustrator/ai_ipad.png" alt="ipad" />
           <div class="tw_box"></div>
         </div>
       </div>
     </div>
     <div class="fourth">
-      <div class="fourth_wrap">
+      <div class="fourth_wrap fbc">
         <div class="fw_title">Illustrator로 만든 작품</div>
         <div class="fw_img">
-          <img src="images/illustrator/ai_images.jpg" alt="" />
+          <img src="images/illustrator/ai_images.jpg" alt="images" />
         </div>
       </div>
     </div>
@@ -105,7 +109,7 @@
       <div class="footer_wrap">
         <div>
           <ul>
-            <li><img src="images/icon/icon_adobe_logo.png" alt="" /></li>
+            <li><img src="images/icon/icon_adobe_logo.png" alt="Logo" /></li>
             <li>Adobe</li>
           </ul>
         </div>
@@ -114,5 +118,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/hideNav.js"></script>
   </body>
 </html>

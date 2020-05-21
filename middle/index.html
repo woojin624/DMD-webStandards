@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/main_ani.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Noto+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -15,34 +16,115 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="#nav" class="fbr">
         <div class="nav_frame">
           <div class="nav_ul_box1">
             <ul>
-              <li><img src="images/icon/icon_adobe_logo.png" alt="" /></li>
-              <li>Adobe</li>
+              <li>
+                <a href="index.html"
+                  ><img src="images/icon/icon_adobe_logo.png" alt="Logo"
+                /></a>
+              </li>
+              <li><a href="index.html">Adobe</a></li>
             </ul>
           </div>
           <div class="nav_ul_box2">
             <ul>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-              <li>PremierePro</li>
+              <li><a href="photoshop.html">Photoshop</a></li>
+              <li><a href="Illustrator.html">Illustrator</a></li>
+              <li><a href="premierePro.html">PremierePro</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div class="main_wrap">
-      <div class="main"></div>
+    <div class="main_wrap fbr">
+      <div class="main fbr">
+        <svg
+          id="logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1310.5 1155"
+        >
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_3" data-name="Layer 3">
+              <polygon
+                class="cls-1"
+                points="757.75 1154.5 0.74 1154.5 472.75 0.5 826.75 0.5 1309.74 1154.5 1026.74 1154.5 960.75 1154.5 648.75 432.5 435.75 935.5 659.75 935.5 757.75 1154.5"
+              />
+            </g>
+          </g>
+          <div class="main_title">Adobe</div>
+          <div class="main_bot">
+            <div>Scroll</div>
+            <img src="images/directional.png" alt="arrow" />
+          </div>
+        </svg>
+      </div>
     </div>
-    <div class="second_wrap">
-      <div class="second"></div>
+    <div class="second_wrap fbr">
+      <div class="sw_thing fbc">
+        <div class="sw_title">Adobe Creative Cloud</div>
+        <div class="sw_con">
+          Adobe Creative Cloud에서 <br />
+          세계 최고의 크리에이티브 앱과 서비스를 제공 받으세요.
+        </div>
+      </div>
+      <div class="second">
+        <div class="second_cc fbr">
+          <img src="images/icon/icon_cloudcc.png" alt="cloud" />
+          <div id="sc_icons" class="fbr">
+            <div id="cc_icon_1">
+              <img src="images/icon/icon_ae.png" alt="ae" />
+            </div>
+            <div id="cc_icon_2">
+              <img src="images/icon/icon_ai.png" alt="ai" />
+            </div>
+            <div id="cc_icon_3">
+              <img src="images/icon/icon_an.png" alt="an" />
+            </div>
+            <div id="cc_icon_4">
+              <img src="images/icon/icon_au.png" alt="au" />
+            </div>
+            <div id="cc_icon_5">
+              <img src="images/icon/icon_br.png" alt="br" />
+            </div>
+            <div id="cc_icon_6">
+              <img src="images/icon/icon_ch.png" alt="ch" />
+            </div>
+            <div id="cc_icon_7">
+              <img src="images/icon/icon_dw.png" alt="dw" />
+            </div>
+            <div id="cc_icon_8">
+              <img src="images/icon/icon_ic.png" alt="ic" />
+            </div>
+            <div id="cc_icon_9">
+              <img src="images/icon/icon_id.png" alt="id" />
+            </div>
+            <div id="cc_icon_10">
+              <img src="images/icon/icon_lr.png" alt="lr" />
+            </div>
+            <div id="cc_icon_11">
+              <img src="images/icon/icon_mu.png" alt="mu" />
+            </div>
+            <div id="cc_icon_12">
+              <img src="images/icon/icon_pl.png" alt="pl" />
+            </div>
+            <div id="cc_icon_13">
+              <img src="images/icon/icon_pr.png" alt="pr" />
+            </div>
+            <div id="cc_icon_14">
+              <img src="images/icon/icon_ps.png" alt="ps" />
+            </div>
+            <div id="cc_icon_15">
+              <img src="images/icon/icon_xd.png" alt="xd" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
     <div class="third_wrap">
       <div class="cc_intro">
-        <img src="images/icon/icon_cloudcc.png" alt="" />
+        <img src="images/icon/icon_cloudcc.png" alt="cloud" />
         <div class="cc_title">Creative Cloud 소개</div>
         <div class="cc_con">
           Creative Cloud는 사진, 디자인, 비디오, 웹 및 UX 작업에 필요한 20개
@@ -54,7 +136,6 @@
           보십시오.
         </div>
       </div>
-
       <div class="cc_ps">
         <div class="ps_left">
           <div class="ps_top">
@@ -82,17 +163,18 @@
             안될 크리에이티브 툴입니다.
           </div>
           <div class="ps_bot">
-            <div class="ps_detail_box">
-              <div>자세히 보기</div>
-              <div><img src="images/point-to.png" alt="" /></div>
-            </div>
+            <a href="photoshop.html">
+              <div class="ps_detail_box">
+                <div>자세히 보기</div>
+                <div><img src="images/point-to.png" alt="point" /></div>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="ps_img"><img src="images/main/main_ps.jpg" alt="" /></div>
+        <div class="ps_img"><img src="images/main/main_ps.jpg" alt="ps" /></div>
       </div>
-
       <div class="cc_ai">
-        <div class="ai_img"><img src="images/main/main_ai.png" alt="" /></div>
+        <div class="ai_img"><img src="images/main/main_ai.png" alt="ai" /></div>
         <div class="ai_right">
           <div class="ai_top">
             <div class="ai_line">
@@ -121,15 +203,16 @@
             로고, 아이콘 등. 다양한 콘텐츠를 제작하고 있습니다.<br />
           </div>
           <div class="ai_bot">
-            <div class="ai_detail_box">
-              <div>자세히 보기</div>
-              <div><img src="images/point-to.png" alt="" /></div>
-            </div>
+            <a href="Illustrator.html">
+              <div class="ai_detail_box">
+                <div>자세히 보기</div>
+                <div><img src="images/point-to.png" alt="point" /></div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-
-      <div class="cc_ps">
+      <div class="cc_ps" style="margin-bottom: 150px;">
         <div class="ps_left">
           <div class="ps_top">
             <div class="ps_title">PremierePro</div>
@@ -156,21 +239,22 @@
             세련된 영화나 동영상으로 만들 수 있습니다.
           </div>
           <div class="ps_bot">
-            <div class="ps_detail_box">
-              <div>자세히 보기</div>
-              <div><img src="images/point-to.png" alt="" /></div>
-            </div>
+            <a href="premierePro">
+              <div class="ps_detail_box">
+                <div>자세히 보기</div>
+                <div><img src="images/point-to.png" alt="point" /></div>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="ps_img"><img src="images/main/main_pr.jpg" alt="" /></div>
+        <div class="ps_img"><img src="images/main/main_pr.jpg" alt="pr" /></div>
       </div>
     </div>
-
     <footer>
       <div class="footer_wrap">
         <div>
           <ul>
-            <li><img src="images/icon/icon_adobe_logo.png" alt="" /></li>
+            <li><img src="images/icon/icon_adobe_logo.png" alt="logo" /></li>
             <li>Adobe</li>
           </ul>
         </div>
@@ -179,5 +263,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/ccIcons.js"></script>
+    <script src="js/hideNav.js"></script>
   </body>
 </html>
