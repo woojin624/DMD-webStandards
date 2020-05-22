@@ -96,6 +96,6 @@ body {
 }
 @keyframes overflow {
   to {
-    overflow: initial;
+    overflow: visible;
   }
 }
