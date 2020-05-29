@@ -90,6 +90,7 @@ nav {
     opacity: 1;
   }
 }
+
 body {
   overflow: hidden;
   animation: overflow 0.5s forwards 3s;
