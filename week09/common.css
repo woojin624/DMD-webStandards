@@ -1,34 +1,124 @@
-* {font-family: 'Open Sans', sans-serif; margin:0; padding:0; line-height:1;}
-header {position:absolute;width:100%;}
-header > h1 {float:left;margin:59px 0 0 85px;}
-header > div.search-wrap {
-    float:right;position:relative;width:263px;height:45px;
-    background-color:#343c48;border-radius: 23px;margin-top:60px;
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
-header > div.search-wrap > input {
-    background-color:transparent;border:0;color:#FFF;
-    width:185px;height:45px;margin-left:30px;
+header {
+  position: absolute;
+  width: 100%;
 }
-header > div.search-wrap > a {position:absolute;right:19px;top:15px;width:14px;height:14px;display:block;}
-header > div.btn-wrap {float:right;}
-header > div.btn-wrap > a {
-    display:block;width:116px;height:31px;background-color:#835fa8;text-align:center;color:#FFF;
-    border-radius:23px;text-decoration:none;padding-top:14px;margin:60px 0 0 15px;
+header > h1 {
+  float: left;
+  margin: 59px 0 0 85px;
 }
 
-header > div.menu-wrap {float:right;}
-header > div.menu-wrap > a {display:block;margin:75px 72px 0 23px;}
+/* 기존 style */
+/* header > div.search-wrap {
+  float: right;
+  position: relative;
+  width: 263px;
+  height: 45px;
+  background-color: #343c48;
+  border-radius: 23px;
+  margin-top: 60px;
+}
+header > div.search-wrap > input {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  width: 185px;
+  height: 45px;
+  margin-left: 30px;
+}
+header > div.search-wrap > a {
+  position: absolute;
+  right: 19px;
+  top: 15px;
+  width: 14px;
+  height: 14px;
+  display: block;
+} */
+
+/* 과제 */
+header > form.search-wrap {
+  float: right;
+  position: relative;
+  width: 263px;
+  height: 45px;
+  background-color: #343c48;
+  border-radius: 23px;
+  margin-top: 60px;
+}
+header > form.search-wrap > input {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  width: 185px;
+  height: 45px;
+  margin-left: 30px;
+}
+header > form.search-wrap > input.icon-search {
+  position: absolute;
+  background: url("./images/btn-search.png") no-repeat;
+  right: 19px;
+  top: 15px;
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+header > div.btn-wrap {
+  float: right;
+}
+header > div.btn-wrap > a {
+  display: block;
+  width: 116px;
+  height: 31px;
+  background-color: #835fa8;
+  text-align: center;
+  color: #fff;
+  border-radius: 23px;
+  text-decoration: none;
+  padding-top: 14px;
+  margin: 60px 0 0 15px;
+}
+
+header > div.menu-wrap {
+  float: right;
+}
+header > div.menu-wrap > a {
+  display: block;
+  margin: 75px 72px 0 23px;
+}
 header > div.menu-wrap > a > span {
-    width:18px;height:2px;background-color:#FFF;
-    display:block;
-    text-indent:-9999px;
-    margin:4px 0;
+  width: 18px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  text-indent: -9999px;
+  margin: 4px 0;
 }
 
 section > article {
-    background-image:url('./images/visual.jpg');height:867px;
-    background-position:center;background-repeat:no-repeat;background-size:cover
-    ;}
-section > article > p {color:#FFF;width:40%;padding:0 0 0 40%;}
-section > article > p.tit {font-size:70px;line-height:90px;padding-top:380px;}
-section > article > p.txt {font-size:18px;line-height:30px;padding-top:20px;}
+  background-image: url("./images/visual.jpg");
+  height: 867px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section > article > p {
+  color: #fff;
+  width: 40%;
+  padding: 0 0 0 40%;
+}
+section > article > p.tit {
+  font-size: 70px;
+  line-height: 90px;
+  padding-top: 380px;
+}
+section > article > p.txt {
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 20px;
+}
