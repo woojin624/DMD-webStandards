@@ -41,7 +41,7 @@ header > div.search-wrap > a {
 } */
 
 /* 과제 */
-header > form.search-wrap {
+header > div.search-wrap {
   float: right;
   position: relative;
   width: 263px;
@@ -50,7 +50,7 @@ header > form.search-wrap {
   border-radius: 23px;
   margin-top: 60px;
 }
-header > form.search-wrap > input {
+header > div.search-wrap > form > input {
   background-color: transparent;
   border: 0;
   color: #fff;
@@ -58,14 +58,15 @@ header > form.search-wrap > input {
   height: 45px;
   margin-left: 30px;
 }
-header > form.search-wrap > input.icon-search {
+header > div.search-wrap > form > button {
   position: absolute;
-  background: url("./images/btn-search.png") no-repeat;
   right: 19px;
   top: 15px;
   width: 14px;
   height: 14px;
   display: block;
+  background: none;
+  border: 0;
 }
 
 header > div.btn-wrap {
@@ -100,25 +101,46 @@ header > div.menu-wrap > a > span {
   margin: 4px 0;
 }
 
-section > article {
+section > article.visual-area {
   background-image: url("./images/visual.jpg");
   height: 867px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-section > article > p {
+section > article.visual-area > p {
   color: #fff;
   width: 40%;
   padding: 0 0 0 40%;
 }
-section > article > p.tit {
+section > article.visual-area > p.tit {
   font-size: 70px;
   line-height: 90px;
   padding-top: 380px;
 }
-section > article > p.txt {
+section > article.visual-area > p.txt {
   font-size: 18px;
   line-height: 30px;
   padding-top: 20px;
+}
+
+section > article.summary-area {
+  background-color: #835fa8;
+  height: 503px;
+}
+section > article.summary-area > div {
+}
+section > article.summary-area > div > h2 {
+}
+section > article.summary-area > div > p {
+}
+section > article.summary-area > div > a {
+}
+section > article.summary-area > div > div {
+}
+section > article.summary-area > div > div > img {
+}
+section > article.summary-area > div > div > img.img-ui {
+}
+section > article.summary-area > div > div > img.img-phone {
 }

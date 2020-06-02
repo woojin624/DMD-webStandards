@@ -26,15 +26,29 @@
             <a href="#"><img src="./images/btn-search.png" width="14" height="14"></a>
         </div> -->
         <!-- 과제 -->
-        <form class="search-wrap">
-            <input type="text" placeholder="Search website" />
-            <input class="icon-search" type="submit" value="" />
-        </form>
+        <div class="search-wrap">
+            <form action="search.php" method="GET">
+                <input type="text" name="keyword" placeholder="Search website" />
+                <button><img src="./images/btn-search.png" alt="" width="14" height="14"></button>
+            </form>
+        </div>
+        
     </header>
     <section>
         <article class="visual-area">
             <p class="tit">Building bulletproof<br />fucking apps</p>
             <p class="txt">Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog crucifix put a bird on it four dollar toast cardigan scenester aesthetic </p>
+        </article>
+        <article class="summary-area">
+            <div>
+                <h2>Super Duper & Such</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. aliqua.</p>
+                <a href="#">See More</a>
+                <div>
+                    <img src="./images/ui.png" class="img-ui" width="307" height="269" />
+                    <img src="./images/phone.png" class="img-phone" width="423" height="610" />
+                </div>
+            </div>
         </article>
     </section>
 </body>
