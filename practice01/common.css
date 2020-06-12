@@ -197,43 +197,14 @@ section > article.text-area > ul > li > a {
   margin-bottom: 110px;
 }
 
-section > article.tool-area {
-  background-color: #2b303b;
-  text-align: center;
-}
-section > article.tool-area > ul {
-  width: 1140px;
-  margin: 0 auto;
-  display: inline-block;
-}
-section > article.tool-area > ul > li {
-  float: left;
-  list-style-type: none;
-  width: 255px;
-  text-align: left;
-  margin-right: 40px;
-}
-section > article.tool-area > ul > li:last-child {
-  margin-right: 0;
-}
-section > article.tool-area > ul > li > img {
-  padding-top: 83px;
-}
-section > article.tool-area > ul > li > h3 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  padding: 35px 0 27px 0;
-}
-section > article.tool-area > ul > li > h3 > span {
-  color: #3a4d60;
-}
-section > article.tool-area > ul > li > p {
-  color: #9da5b0;
-  font-size: 14px;
-  line-height: 26px;
-  margin-bottom: 160px;
-}
+section > article.detail-area {background-color:#2b303b; position:relative; text-align:center;}
+section > article.detail-area > ol {width:1160px; display:inline-block;}
+section > article.detail-area > ol > li {list-style-type:none; float:left; width:25%; text-align:left;}
+section > article.detail-area > ol > li > dl {padding:80px 10px 150px;}
+section > article.detail-area > ol > li > dl > dt > h2 {font-weight:normal;font-size:20px;color:#FFF;padding:20px 0;}
+section > article.detail-area > ol > li > dl > dt > h2 > em {font-style:normal;color:#3a4d60;}
+section > article.detail-area > ol > li > dl > dd {color:#9da5b0;font-size:14px;line-height:26px;}
+section > article.detail-area > span.ic-top {position:absolute;top:0;left:50%;margin-left:-57px;}
 
 footer {
   background-color: #1a2124;
